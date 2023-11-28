@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  label > span {
+    flex: 1;
+    margin-right: 10px;
+  }
+  input[type="text"], input[type="date"], input[type="number"], select {
+    flex: 2;
+    padding: 5px;
+  }
+  input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+
+
+  body{
+    background-color: #E7EFF7;
+  }
+  
+  
+  .bg-body-tertiary{
+      background-color: #01BDED !important;
+  }
+  
+  /* Cambiar color y tipo de fuente */
+  .navbar-brand,
+  .navbar-nav .nav-link,
+  .navbar-text a {
+    color: white; /* Cambiar color del texto a azul */
+    font-family: 'Arial', sans-serif; /* Cambiar el tipo de fuente a Arial */
+  }

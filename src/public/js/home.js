@@ -12,7 +12,6 @@ function crearCliente() {
 
 
 
-
 function crearCita() {
     window.location.href = "/crearCita";
 }
@@ -20,4 +19,8 @@ function crearCita() {
 
 function crearFactura() {
     window.location.href = "/crearFactura";
+}
+
+function inventario() {
+    window.location.href = "/inventario";
 }

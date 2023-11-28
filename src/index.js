@@ -31,7 +31,6 @@ res.render('crearEmpleado');
 });
 
 
-
 app.get('/crearCliente', (req, res) => {
 res.render('crearCliente');
 });
@@ -46,6 +45,18 @@ res.render('crearCita');
 
 app.get('/crearFactura', (req, res) => {
 res.render('crearFactura');
+});
+
+app.get('/inventario', (req, res) => {
+res.render('inventario');
+});
+
+app.get('/producto', (req, res) => {
+res.render('producto');
+});
+
+app.get('/crearProducto', (req, res) => {
+res.render('crearProducto');
 });
 
 
