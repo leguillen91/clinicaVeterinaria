@@ -19,8 +19,38 @@ res.render('home');
 
 
 app.get('/login', (req, res) => {
-	res.render('login');
-	});
+res.render('login');
+});
+
+app.get('/gestionarEmpleado', (req, res) => {
+res.render('gestionarEmpleado');
+});
+
+app.get('/crearEmpleado', (req, res) => {
+res.render('crearEmpleado');
+});
+
+
+
+app.get('/crearCliente', (req, res) => {
+res.render('crearCliente');
+});
+
+app.get('/crearMascota', (req, res) => {
+res.render('crearMascota');
+});
+
+app.get('/crearCita', (req, res) => {
+res.render('crearCita');
+});
+
+app.get('/crearFactura', (req, res) => {
+res.render('crearFactura');
+});
+
+
+	
+
 
 //mildrewers
 app.use(cors());
@@ -34,6 +64,7 @@ app.listen(puerto, () => {
 	console.log(`Servidor Levantado en https://localhost:${puerto}`);
 });
 
+/*
 const connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
@@ -50,9 +81,5 @@ const connection = mysql.createConnection({
 	console.log('Conexión exitosa con ID: ' + connection.threadId);
 	// Aquí puedes realizar consultas, operaciones en la base de datos, etc.
   });
-  
-  connection.query('SELECT * FROM cliente', (error, results, fields) => {
-	if (error) throw error;
-	console.log('Los resultados de la consulta son: ', results);
-  });
+  */
   
