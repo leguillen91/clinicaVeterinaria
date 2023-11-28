@@ -9,7 +9,40 @@
 </head>
   <title>Ingreso de Clientes</title>
   link(rel="stylesheet", href="/css/home.css")
+  script(src="/js/crearCliente.js")
 <body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">La Mascota</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Menu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/crearMascota">Ingresar Mascota</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/crearCita">Nueva Cita</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+    
+        <a class="nav-link " href="#" >
+      <img <i class="fa-solid fa-user"></i  fa-regula alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+      Nombre Nombre Usuario
+    </a>
+      </span>
+    </div>
+  </div>
+</nav>
 
 h2 Ingresar Nuevo Cliente
 
@@ -82,8 +115,9 @@ h2 Ingresar Nuevo Cliente
         <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
       </div>
 
-      <button href="/crearMascota" type="submit" class="btn btn-success">Guardar</button>
-      <a class="btn btn-primary" href="/home">Regresar</a>
+  
+      <button  type="submit" class="btn btn-success">Guardar</button>
+      <a class="btn btn-primary" href="/">Regresar</a>
 
 </div>
 
