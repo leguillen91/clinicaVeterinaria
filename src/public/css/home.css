@@ -1,36 +1,30 @@
-body{
+body {
   background-color: #E7EFF7;
 }
 
-
-.bg-body-tertiary{
-    background-color: #01BDED !important;
+.bg-body-tertiary {
+  background-color: #01BDED !important;
 }
 
-/* Cambiar color y tipo de fuente */
 .navbar-brand,
 .navbar-nav .nav-link,
 .navbar-text a {
-  color: white; /* Cambiar color del texto a azul */
-  font-family: 'Arial', sans-serif; /* Cambiar el tipo de fuente a Arial */
+  color: white;
+  font-family: 'Arial', sans-serif;
 }
 
-.rectangulo{
+.rectangulo {
   background-color: white;
   width: 100%;
   height: 50px;
   border-bottom: 2px solid #01BDED;
   margin-bottom: 2%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedor{
-
+.contenedor {
   background-color: white;
   width: 70%;
   height: auto;
@@ -44,37 +38,32 @@ body{
   border-radius: 10px;
 }
 
-.circular-texto{
+.circular-texto {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .contenedor-circular {
   width: 143px;
-    height: 135px;
-    border-radius: 50%;
-    overflow: hidden;
-    text-align: center;
-    border: 3px solid #E7EFF7;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circular-texto:hover {
-  cursor: pointer; /* Cambia el color cuando el mouse está encima */
- 
- }
-.contenedor-circular:hover {
- cursor: pointer;
- background-color: #E7EFF7;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  border: 3px solid #E7EFF7;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icono{
+.circular-texto:hover,
+.contenedor-circular:hover {
+  cursor: pointer;
+  background-color: #E7EFF7;
+}
+
+.icono {
   font-size: 3rem;
   color: #A5DEF7;
 }
-
-
-
-
