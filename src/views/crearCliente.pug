@@ -37,7 +37,7 @@
 
 <h2 class="text-center mt-4">Ingresar Nuevo Cliente</h2>
 
-<form method="" action="">
+<form method="POST" action="/api/crearCliente">
   <div class="container mt-4">
     <div class="row">
       <div class="mb-3 col-md-6">
@@ -93,7 +93,8 @@
         <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
       </div>
       <div class="mb-3 col-12 text-center">
-        <button type="submit" class="btn btn-success" formaction="/crearMascota">Siguiente</button>
+        <button type="submit" class="btn btn-success" onclick="crearMascota()">Siguiente</button>
+
         <a class="btn btn-primary" href="/">Regresar</a>
       </div>
     </div>

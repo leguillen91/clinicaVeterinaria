@@ -4,8 +4,17 @@ const path = require('path');
 const cors=require('cors');
 const bodyParser= require('body-parser');
 const puerto=3002;
-
+const Server = require('./Server');
 const app = express();
+
+const db = new Database({
+	host: 'tu_host',
+	user: 'tu_usuario',
+	password: 'tu_contraseña',
+	database: 'tu_base_de_datos'
+  });
+  
+
 
 // Configura el motor de vistas Pug
 app.use(express.static(path.join(__dirname, 'public')));
@@ -58,39 +67,42 @@ res.render('producto');
 app.get('/crearProducto', (req, res) => {
 res.render('crearProducto');
 });
-
-
-	
-
-
-//mildrewers
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
-
-
-
-
-app.listen(puerto, () => {
+a// API endpoint para crear un cliente
+app.post('/api/crearCliente', (req, res) => {
+	const {
+	  dni,
+	  primernombre,
+	  segundonombre,
+	  primerapellido,
+	  segundoapellido,
+	  edad,
+	  fechanacimiento,
+	  generoID,
+	  ciudad,
+	  colonia,
+	  calle,
+	  telefono
+	} = req.body;
+  
+	// Ejemplo de cómo podrías usar tu clase Database para manejar la conexión y la consulta
+	const sqlQuery = 'INSERT INTO clientes (dni, primernombre, segundonombre, primerapellido, segundoapellido, edad, fechanacimiento, generoID, ciudad, colonia, calle, telefono) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+  
+	db.query(sqlQuery, [dni, primernombre, segundonombre, primerapellido, segundoapellido, edad, fechanacimiento, generoID, ciudad, colonia, calle, telefono], (err, result) => {
+	  if (err) {
+		console.error('Error al insertar cliente:', err);
+		res.status(500).json({ error: 'Error interno del servidor' });
+		return;
+	  }
+  
+	  res.json({ id: result.insertId });
+	});
+  });
+  
+  // Middleware de Cors y body-parser
+  app.use(cors());
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: true }));
+  
+  app.listen(puerto, () => {
 	console.log(`Servidor Levantado en https://localhost:${puerto}`);
-});
-
-/*
-const connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password: '',
-	database: 'clinicaVeterinaria'
   });
-  
-
-  connection.connect((err) => {
-	if (err) {
-	  console.error('Error al conectar: ' + err.stack);
-	  return;
-	}
-	console.log('Conexión exitosa con ID: ' + connection.threadId);
-	// Aquí puedes realizar consultas, operaciones en la base de datos, etc.
-  });
-  */
-  
