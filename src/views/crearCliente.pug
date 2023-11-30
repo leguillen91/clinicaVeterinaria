@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css")
   <script src="https://kit.fontawesome.com/4db8fdbf3d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/home.css">
-  <script src="/js/crearCliente.js"></script>
-  <title>Ingreso de Clientes</title>
+  
 </head>
+  <title>Ingreso de Clientes</title>
+  link(rel="stylesheet", href="/css/home.css")
+  script(src="/js/crearCliente.js")
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">La Mascota</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,87 +20,124 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
         <li class="nav-item">
           <a class="nav-link" href="/home">Menu</a>
         </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item user-section">
-          <span class="navbar-text user-info">
-            <img src="https://static.vecteezy.com/system/resources/previews/019/879/198/non_2x/user-icon-on-transparent-background-free-png.png" alt="User Image" style="width: 30px; height: 30px; border-radius: 50%;">
-            Nombre Usuario
-          </span>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/crearMascota">Ingresar Mascota</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/crearCita">Nueva Cita</a>
         </li>
       </ul>
+      <span class="navbar-text">
+    
+        <a class="nav-link " href="#" >
+      <img <i class="fa-solid fa-user"></i  fa-regula alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+      Nombre Nombre Usuario
+    </a>
+      </span>
     </div>
   </div>
 </nav>
 
-<h2 class="text-center mt-4">Ingresar Nuevo Cliente</h2>
+h2 Ingresar Nuevo Cliente
 
+<<<<<<< HEAD
 <form method="POST" action="/api/crearCliente">
   <div class="container mt-4">
     <div class="row">
       <div class="mb-3 col-md-6">
         <label for="dni" class="form-label">DNI</label>
+=======
+<form method="" action="">
+
+
+<div class="row">
+
+
+     <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">DNI</label>
+>>>>>>> parent of 2c99b55 (cambiando logica y mejorando pantallas)
         <input type="text" class="form-control" name="dni" id="dni" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="primernombre" class="form-label">Primer Nombre</label>
+     </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Primer Nombre</label>
         <input type="text" class="form-control" name="primernombre" id="primernombre" placeholder="">
       </div>
-      <div class="mb-3 col-md-6">
-        <label for="segundonombre" class="form-label">Segundo Nombre</label>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Segundo  Nombre</label>
         <input type="text" class="form-control" name="segundonombre" id="segundonombre" placeholder="">
       </div>
-      <div class="mb-3 col-md-6">
-        <label for="primerapellido" class="form-label">Primer Apellido</label>
-        <input type="text" class="form-control" name="primerapellido" id="primerapellido" placeholder="">
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Primer Apellido</label>
+        <input type="text" class="form-control" name="correo" id="correo" placeholder="">
       </div>
-      <div class="mb-3 col-md-6">
-        <label for="segundoapellido" class="form-label">Segundo Apellido</label>
-        <input type="text" class="form-control" name="segundoapellido" id="segundoapellido" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="edad" class="form-label">Edad</label>
-        <input type="number" class="form-control" name="edad" id="edad" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="fechanacimiento" class="form-label">Fecha Nacimiento</label>
-        <input type="date" class="form-control" name="fechanacimiento" id="fechanacimiento" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="generoID">Género</label>
-        <select class="form-select" id="generoID" name="generoID">
-          <option value="1">MASCULINO</option>
-          <option value="2">FEMININO</option>
-          <option value="3">OTRO</option>
-        </select>
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="ciudad" class="form-label">Ciudad</label>
-        <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="colonia" class="form-label">Colonia</label>
-        <input type="text" class="form-control" name="colonia" id="colonia" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="calle" class="form-label">Calle</label>
-        <input type="text" class="form-control" name="calle" id="calle" placeholder="">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="telefono" class="form-label">Teléfono</label>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Segundo Apellido</label>
         <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
       </div>
+<<<<<<< HEAD
       <div class="mb-3 col-12 text-center">
         <button type="submit" class="btn btn-success" onclick="crearMascota()">Siguiente</button>
 
         <a class="btn btn-primary" href="/">Regresar</a>
+=======
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Edad</label>
+        <input type="number" class="form-control" name="edad" id="edad" placeholder="">
+>>>>>>> parent of 2c99b55 (cambiando logica y mejorando pantallas)
       </div>
-    </div>
-  </div>
+
+        <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Fecha Nacimiento</label>
+        <input type="date" class="form-control" name="fechanacimiento" id="fechanacimiento" placeholder="">
+      </div>
+
+      div
+        label(for="generoID") Genero:
+        select(id="generoID", name="generoID")
+            option(value="1") MASCULINO
+            option(value="2") FEMININO
+            option(value="3") OTRO
+            // Agrega más opciones según los cargos disponibles en la tabla
+      
+   
+      <div class="mb-3"> </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
+      </div>
+
+        <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Colonia</label>
+        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
+      </div>
+
+        <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">calle</label>
+        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
+      </div>
+
+     
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">telefono</label>
+        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
+      </div>
+
+  
+      <button  type="submit" class="btn btn-success">Guardar</button>
+      <a class="btn btn-primary" href="/">Regresar</a>
+
+</div>
+
 </form>
+
 
 </body>
 </html>

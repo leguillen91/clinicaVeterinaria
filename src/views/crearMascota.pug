@@ -3,94 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css")
   <script src="https://kit.fontawesome.com/4db8fdbf3d.js" crossorigin="anonymous"></script>
-  <title>Ingreso Mascota</title>
-  <link rel="stylesheet" href="/css/home.css">
+  
 </head>
+  <title>Ingreso Mascota</title>
+  link(rel="stylesheet", href="/css/home.css")
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">La Mascota</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/home">Menu</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <a class="nav-link" href="#">
-          <img src="https://static.vecteezy.com/system/resources/previews/019/879/198/non_2x/user-icon-on-transparent-background-free-png.png" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
-          Nombre Usuario
-        </a>
-      </span>
-    </div>
-  </div>
-</nav>
+h2 Ingresar Mascota
 
-<div class="container mt-5">
-  <h2 class="text-center">Ingresar Mascota</h2>
+<form method="" action="">
 
-  <form method="" action="">
-    <div class="row">
-      <div class="mb-3 col-md-6">
-        <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
-        <input type="text" class="form-control" id="nombreMascota" name="nombreMascota" placeholder="Ejemplo: Toby">
+
+<div class="row">
+
+
+     <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Nombre de la Mascota</label>
+        <input type="text" class="form-control" name="dni" id="dni" placeholder="">
+     </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Edad</label>
+        <input type="text" class="form-control" name="primernombre" id="primernombre" placeholder="">
       </div>
 
-      <div class="mb-3 col-md-6">
-        <label for="edadMascota" class="form-label">Edad</label>
-        <input type="text" class="form-control" id="edadMascota" name="edadMascota" placeholder="Ejemplo: 2 años">
-      </div>
+      <select for="formGroupExampleInput2" class="form-select mb-3" aria-label="Default select example">
+      <option selected>ESPECIE</option>
+      <option value="1">PERRO</option>
+      <option value="2">GATO</option>
+      <option value="3">OTRO</option>
+      </select>
 
-      <div class="mb-3 col-md-6">
-        <label for="especie" class="form-label">Especie</label>
-        <select class="form-select" id="especie" name="especie">
-          <option selected>Seleccione especie</option>
-          <option value="perro">Perro</option>
-          <option value="gato">Gato</option>
-          <option value="otro">Otro</option>
-        </select>
-      </div>
 
-      <div class="mb-3 col-md-6">
-        <label for="raza" class="form-label">Raza</label>
-        <select class="form-select" id="raza" name="raza">
-          <option selected>Seleccione raza</option>
-          <option value="labrador">Labrador</option>
-          <option value="pastorAleman">Pastor Alemán</option>
-          <option value="otro">Otro</option>
-        </select>
-      </div>
+       <select for="formGroupExampleInput2" class="form-select mb-3" aria-label="Default select example">
+      <option selected>RAZA</option>
+      <option value="1">LABRADOR</option>
+      <option value="2">PASTOR ALEMAN</option>
+      <option value="3">OTRO</option>
+      </select>
 
-      <div class="mb-3 col-md-6">
-        <label for="sexo" class="form-label">Sexo</label>
-        <select class="form-select" id="sexo" name="sexo">
-          <option selected>Seleccione sexo</option>
-          <option value="hembra">Hembra</option>
-          <option value="macho">Macho</option>
-        </select>
-      </div>
+       <select for="formGroupExampleInput2" class="form-select mb-3" aria-label="Default select example">
+      <option selected>SEXO</option>
+      <option value="1">HEMBRA</option>
+      <option value="2">MACHO</option>
+      </select>
 
-      <div class="mb-3 col-md-6">
-        <label for="cliente" class="form-label">Cliente</label>
-        <select class="form-select" id="cliente" name="cliente">
-          <option selected>Seleccione cliente</option>
-          <option value="juanPerez">Juan Perez</option>
-        </select>
-      </div>
+      <select for="formGroupExampleInput2" class="form-select mb-3" aria-label="Default select example">
+      <option selected>CLIENTE</option>
+      <option value="1">JUAN PEREZ</option>
 
-      <div class="mb-3 col-md-6">
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <a class="btn btn-primary" href="/">Regresar</a>
-      </div>
-    </div>
-  </form>
+      </select>
+
+
+
+
+      <button  type="submit" class="btn btn-success">Guardar</button>
+      <a class="btn btn-primary" href="/">Regresar</a>
+
 </div>
+
+</form>
+
 
 </body>
 </html>
