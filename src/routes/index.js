@@ -1,5 +1,3 @@
-// /proyecto/src/routes/index.js
-
 const express = require('express');
 const router = express.Router();
 
@@ -37,6 +35,14 @@ router.get('/producto', (req, res) => {
 
 router.get('/crearProducto', (req, res) => {
   res.render('crearProducto');
+});
+
+router.get('/crearCita', (req, res) => {
+  res.render('crearCita');
+});
+
+router.get('/crearMascota', (req, res) => {
+  res.render('crearMascota');
 });
 
 // Ruta para manejar el POST de crearCliente
